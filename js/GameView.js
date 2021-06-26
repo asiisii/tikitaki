@@ -7,8 +7,8 @@ export default class GameView {
   updateTurn(game) {        
       let playerX= document.querySelector('.player-x');
       let playerO = document.querySelector('.player-o');
-      let player1Img= document.querySelector('.leftImg');
-      let player2Img = document.querySelector('.rightImg');
+      let player1Img= document.querySelector('.one');
+      let player2Img = document.querySelector('.two');
       let msg = document.querySelector(".message")
       
       playerX.classList.remove("active");

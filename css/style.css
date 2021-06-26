@@ -57,23 +57,13 @@ h1 {
   width: 300px;
 }
 
-img {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  border-radius: 50%;
-  transition: transform .5s ease;
-}
 
 .img-border {
   border-width: thick;
   border-color: green;
   border-style: double dotted;
+  border-radius: 50px;
   box-shadow: 0 0 0 5px #115D69;
-  transform: scale(1.2);
-}
-
-img:hover {
-  cursor: grabbing;
 }
 
 .score:hover,
@@ -176,16 +166,7 @@ p,
 }
 
 .player {
-  font-size: 25px;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-}
-
-.img-wrapper {
-  height: 300px;
+  font-size: 200px;
 }
 
 .message {
@@ -193,11 +174,10 @@ img {
   margin-top: 10px;
 }
 
-
 .player-x {
   border-bottom: 9px solid #eee;
   padding-bottom: 18px;
-  
+  margin-top: 90px;
 }
 
 .player-x.active {
@@ -213,4 +193,5 @@ img {
 .player-o {
   border-bottom: 9px solid #eee;
   padding-bottom: 18px;
+  margin-top: 90px;
 }

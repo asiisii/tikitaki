@@ -16,7 +16,7 @@ export default class GameView {
       msg.innerHTML =  " "      
 
       if (!game.isInProgress() && game.counter === 9) {
-        msg.innerHTML =  `🤷🏻‍♂️ 🤷🏻‍♀️ It's a Draw 🤷🏻‍♀️🤷🏻‍♂️`
+        msg.innerHTML =  `🤷🏻‍♂️ 🤷🏻‍♀️ It's a Draw 🤷🏻‍♀️ 🤷🏻‍♂️`
       }
 
       if (game.isInProgress() && game.counter !== 9 && game.turn === '🧑🏻') {

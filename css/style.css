@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Righteous', cursive;
+  color: #0c5d69;
+}
+
+body {
+  background: linear-gradient(to right top, #729ba3, #729ba3);
+}
+
+main {
+  min-height: 100%; /*Takes the height of the screen*/
+  background: linear-gradient(to right top, #729ba3, #729ba3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*~~~~~~~~~~Three main boxes ~~~~~~~~~~~~~~~*/
+.area {
+  margin: 0 10px;
+  min-height: 85vh;
+  background: linear-gradient(to right bottom,
+    rgba(90, 176, 161, 0.5),
+    rgba(197, 224, 227, 0.5));
+}
+
+.left,
+.center,
+.right,
+.box,
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.left {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  flex: 1;
+}
+
+.right {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  flex: 1;
+}
+
+.center {
+  flex: 3;
+  width: 300px;
+}
+
+img {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  border-radius: 50%;
+  transition: transform .5s ease;
+}
+
+.img-border {
+  border-width: thick;
+  border-color: green;
+  border-style: double dotted;
+  box-shadow: 0 0 0 5px #115D69;
+  transform: scale(1.2);
+}
+
+img:hover {
+  cursor: grabbing;
+}
+
+.score:hover,
+p:hover,
+.player1:hover,
+.player2:hover,
+.message:hover,
+.players-turn:hover,
+.game-name:hover {
+  cursor: default;
+}
+
+.game-name {
+  background: linear-gradient(to right top, #729ba3, #729ba3);
+  margin: 10px;
+  font-size: 50px;
+}
+
+.playersTurn {
+  margin-top: 15px;
+}
+
+.score {
+  font-size: 150px;
+  flex-wrap: wrap;
+}
+
+p,
+.playersTurn {
+  font-size: 50px;
+}
+
+.restart-btn {
+  background: transparent;
+  border: 3px ridge #507872;
+  font-size: 20px;
+  min-width: 15%;
+  margin-right: 5px;
+  margin-top: 25px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.restart-btn:hover {
+  cursor: pointer;
+  background: #0c5d69;
+  color: #fff;
+}
+
+.divider {
+  height: 5px;
+  width: 90%;
+  background-color: #353567;
+  border: 0;
+  margin-top: 10px;
+}
+
+/*~~~~~~~~~~Tic Tac Toe board~~~~~~~~~~~~~~~*/
+
+.wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.box {
+  height: 150px;
+  width: 30%;
+  font-size: 100px;
+}
+
+.box:hover {
+  background: #b4dbdb;
+}
+
+.box:not(:nth-child(3n)) {
+  border-right: 10px ridge #507872;
+}
+
+.box:not(:nth-last-child(-n + 3)) {
+  border-bottom: 10px ridge #507872;
+}
+
+.tile-x {
+  color: #5d19c9;
+}
+
+.tile-o {
+  color: #915d0e
+}
+
+.winner span {
+  background: linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(29,131,152,1) 55%);
+  padding: 5px 18px;
+  border-radius: 50%;
+  text-decoration: line-through solid rgb(170, 24, 24) 15px;
+  margin-top: 5px;
+}
+
+.player {
+  font-size: 25px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.img-wrapper {
+  height: 300px;
+}
+
+.message {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+
+.player-x {
+  border-bottom: 9px solid #eee;
+  padding-bottom: 18px;
+  
+}
+
+.player-x.active {
+  color: #42BED7;
+  border-color: #078199;
+}
+
+.player-o.active {
+  color: #D7BAFB;
+  border-color: #078199;
+}
+
+.player-o {
+  border-bottom: 9px solid #eee;
+  padding-bottom: 18px;
+}
